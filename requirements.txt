@@ -1,0 +1,6 @@
+pyqtgraph
+sounddevice
+pyopengl
+librosa
+opencv-python
+qt-multiprocessing
