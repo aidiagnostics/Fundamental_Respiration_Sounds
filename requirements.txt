@@ -4,3 +4,7 @@ pyopengl
 librosa
 opencv-python
 qt-multiprocessing
+pandas
+PyQt5
+matplotlib
+pydub

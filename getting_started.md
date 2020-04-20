@@ -10,10 +10,10 @@
 ## Install pyaudio with anaconda
 	conda install -c anaconda pyaudio -y
 
-## Install other requirements 
+## Install other requirements
 	pip install -r requirements.txt
 
 ## Install Jupyter Notebook kernel
-	ipython kernel install --user --name="AI_Diagnostics"
-	
-## 
+	python -m ipykernel install --user --name="AI_Diagnostics"
+
+Remember to always use this kernel to work with the project, otherwise your modules will not appear installed. Visit [virtual Environment Jupyter Notebook help](https://stackoverflow.com/questions/42449814/running-jupyter-notebook-in-a-virtualenv-installed-sklearn-module-not-available) to solve similar issues.
