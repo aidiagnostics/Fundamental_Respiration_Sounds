@@ -10,17 +10,12 @@ Ref:
     Librosa demo:
         https://nbviewer.jupyter.org/github/librosa/librosa/blob/master/examples/LibROSA%20demo.ipynb
 """
-
-
 import numpy as np
 import librosa as lb
 from tqdm import tqdm
 import soundfile as sfile
 import librosa.display as lbdis
 import matplotlib.pyplot as plt
-#%matplotlib inline
-
-
 # getting file path
 import os
 import sys
@@ -142,7 +137,7 @@ tempo, beats = lb.beat.beat_track(y=y_percussive, sr=sf)
 
 # Let's re-draw the spectrogram, but this time, overlay the detected beats
 plt.figure(figsize=(12,4))
-lbdis.specshow(log_S, sr=sf, x_axis='time', y_axis='mel')
+lbdis.specshow(Mspec, sr=sf, x_axis='time', y_axis='mel')
 
 # Let's draw transparent lines over the beat frames
 plt.vlines(lb.frames_to_time(beats),
