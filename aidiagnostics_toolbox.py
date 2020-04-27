@@ -150,3 +150,22 @@ def sq_labels_4(X):
         if round(np.mean(X[i,:])) == 2.0:
             label_matrix[i,2] = 1
     return label_matrix
+
+
+def back_to_long_labels(Xin, predictions):
+    out = np.zeros([Xin.shape[0], Xin.shape[1]])
+    for i in (range(Xin.shape[0])):
+        po = np.argmax(predictions[i])
+        if po == 0:
+            out[i,:] = po
+        if po == 1:
+            out[i,:] = po
+        if po == 2:
+            out[i,:] = po
+        if po == 3:
+            out[i,:] = po
+        if po == 4:
+            out[i,:] = po+1
+        if po == 5:
+            out[i,:] = po+1
+    return out
