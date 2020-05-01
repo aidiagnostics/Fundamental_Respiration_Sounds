@@ -8,3 +8,7 @@ pandas
 PyQt5
 matplotlib
 pydub
+tensorflow
+keras
+ipywidgets
+tqdm
